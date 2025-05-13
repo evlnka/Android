@@ -6,65 +6,23 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <EditText
-        android:id="@+id/input"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:hint="Ввод"
-        android:inputType="none"
-        android:textSize="24sp" />
-
-    <TextView
-        android:id="@+id/result"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:padding="8dp"
-        android:text="Результат: "
-        android:textSize="24sp" />
-
     <GridLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:columnCount="3"
-        android:padding="8dp">
+        android:columnCount="1">
 
         <Button
-            android:id="@+id/plus"
-            android:layout_width="wrap_content"
+            android:id="@+id/Calculator"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="+" />
+            android:text="Калькулятор" />
 
         <Button
-            android:id="@+id/minus"
-            android:layout_width="wrap_content"
+            android:id="@+id/MP3player"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="-" />
+            android:text="MP3 Плеер" />
 
-        <Button
-            android:id="@+id/multiply"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="*" />
-
-        <Button
-            android:id="@+id/division"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="/" />
-
-        <Button
-            android:id="@+id/clear"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="C" />
-
-        <Button
-            android:id="@+id/equals"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="=" />
     </GridLayout>
 
 </LinearLayout>
