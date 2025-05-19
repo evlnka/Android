@@ -9,6 +9,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var bGoToCalculator: Button
     private lateinit var bGoToPlayer: Button
+    private lateinit var bGoToLocation: Button  //
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -16,15 +17,18 @@ class MainActivity : AppCompatActivity() {
 
         bGoToCalculator = findViewById(R.id.Calculator)
         bGoToPlayer = findViewById(R.id.MP3player)
+        bGoToLocation = findViewById(R.id.Location)
 
         bGoToCalculator.setOnClickListener {
-            val intent = Intent(this, CalculatorActivity::class.java)
-            startActivity(intent)
+            startActivity(Intent(this, CalculatorActivity::class.java))
         }
 
         bGoToPlayer.setOnClickListener {
-            val intent = Intent(this, PlayerActivity::class.java)
-            startActivity(intent)
+            startActivity(Intent(this, PlayerActivity::class.java))
+        }
+
+        bGoToLocation.setOnClickListener {
+            startActivity(Intent(this, LocationActivity::class.java))
         }
     }
 }
