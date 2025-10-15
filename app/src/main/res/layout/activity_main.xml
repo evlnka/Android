@@ -24,6 +24,12 @@
             android:text="MP3 Плеер" />
 
         <Button
+            android:id="@+id/ClientServer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Client Server" />
+
+        <Button
             android:id="@+id/Location"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
